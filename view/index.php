@@ -17,18 +17,18 @@
 	<header>
 		<!-- navbar -->
 		<div class="logo">
-			<img src="images/logo.svg">
+			<img src="../images/logo.svg">
 		</div>
 		<div class="main">
 			<ul>
 				<li class="active"><a href="#">Home</a></li>
-				<li><a href="view/shop.php">Shop</a></li>
-				<li><a href="view/cart.php">Cart</a></li>
+				<li><a href="shop.php">Shop</a></li>
+				<li><a href="cart.php">Cart</a></li>
 
 				<?php 
             if(empty($_SESSION['cid'])){
                 ?>
-               <li><a href="view/login.php">Login</a></li>
+               <li><a href="login.php">Login</a></li>
             <?php
             }
             ?>
@@ -37,7 +37,7 @@
                     session_start();
                     if(!empty($_SESSION['cid'])){
                 ?>
-               <li><a href="view/logout.php">Logout</a></li>
+               <li><a href="logout.php">Logout</a></li>
                 <?php
                     }
                 ?>
@@ -79,11 +79,11 @@
 				<?php
              if(isset($_SESSION['cid']) && $_SESSION['role']=="1"){
             ?>
-            <a class="btn"  href="admin/admin_users.php">Admin</a>
+            <a class="btn"  href="../admin/admin_users.php">Admin</a>
            <?php
              } 
             ?>
-			<a href="view/shop.php" class="btn">SHOP</a>
+			<a href="shop.php" class="btn">SHOP</a>
 		</div>
 	</header>
 	
