@@ -22,7 +22,7 @@ if(isset($_POST['Updatec']))
     if ($results) {
       header('location: ../admin/admin_users.php');
   } else {
-      echo 'Registration Failed. Try again';
+      echo 'Update Failed. Try again';
   }
 
   }
