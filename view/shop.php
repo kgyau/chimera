@@ -59,7 +59,7 @@ require("../controllers/product_controller.php");
                    echo"
 					
 						<figure class='product-style'>
-						<img src=' ../images/$product_image' class='product-item' style='height: 400px ; ' >
+						<img src=' ../images/$product_image' class='product-item' style='height: 400px ; width: 300px' >
 							
 							<figcaption>
 								<h3>$product_title</h3>
