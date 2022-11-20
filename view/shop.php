@@ -34,7 +34,7 @@ require("../controllers/product_controller.php");
 <br>
 <br>
 <div>
-<a href="../view/product_search.php"class='btn btn'>Search</a>
+<a href="product_search.php"class='btn btn'>Search</a>
 
 </div>
 
