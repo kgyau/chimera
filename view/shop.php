@@ -64,7 +64,7 @@ require("../controllers/product_controller.php");
 								<h3>$product_title</h3>
 								<p>$pdesc</p>
 								<i class='fa fa-cart-plus' aria-hidden='true'></i>
-								<div class='item-price'>$pprice</div>
+								<div class='item-price'>GHS$pprice</div>
 								<a href='../actions/add_to_cart.php?product_id={$aproduct['product_id']}'class='btn btn'>add to cart</a>
 								<a href='../view/singleproduct.php?product_id={$aproduct['product_id']}' class= 'btn btn'>View</a>
 							</figcaption>
