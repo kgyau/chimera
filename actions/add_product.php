@@ -26,24 +26,24 @@ if(isset($_POST['submitprod'])){
 
 //    echo "<img src='$file'>";
     
-//    echo $prodcat,$prodtitle,$prodprice,$prodbrand,$proddesc,$prodimage,$prodkeywords; 
+   echo $prodcat,$prodtitle,$prodprice,$prodbrand,$proddesc,$prodimage,$prodkeywords; 
 
 
-  $result = addproduct_ctr($prodcat,$prodbrand,$prodtitle,$prodprice,$proddesc,$file,$prodkeywords);
+//   $result = addproduct_ctr($prodcat,$prodbrand,$prodtitle,$prodprice,$proddesc,$file,$prodkeywords);
 
-    if ($result) {
+//     if ($result) {
 
-        if (move_uploaded_file($_FILES["prodimage"]["tmp_name"],"../images/product/".$_FILES["prodimage"]["name"])) {
-            echo "success";
+//         if (move_uploaded_file($_FILES["prodimage"]["tmp_name"],"../images/product/".$_FILES["prodimage"]["name"])) {
+//             echo "success";
     
-        }else {
-            echo "fail";
-        }
-        header("location:../admin/admin_product.php");
+//         }else {
+//             echo "fail";
+//         }
+//         header("location:../admin/admin_product.php");
 
-    } else{
-         header("location:../admin/admin_product.php");
-    }
+//     } else{
+//          header("location:../admin/admin_product.php");
+//     }
 
 }
 
