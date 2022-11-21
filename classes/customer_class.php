@@ -34,7 +34,7 @@ class customer_class extends db_connection
 
 	function deletecustomer_cls($customer_id){
 		$sql= "DELETE FROM `customer` WHERE `customer_id`='$customer_id'";
-		return $this-> db_fetch_all($sql);
+		return $this-> db_query($sql); 
 	}
 
 		function viewonecustomer_cls($customer_id){
