@@ -41,26 +41,26 @@ require("../controllers/cart_controller.php");
     $customer_id= get_id();
     $status='Success';
     $payment_date=date('Y-m-d');
-//     $order= order_ctr($customer_id,$invoice_no,$payment_date,$status);
-     echo $customer_id,$invoice_no,$payment_date,$status;
+    $order= order_ctr($customer_id,$invoice_no,$payment_date,$status);
+//      echo $customer_id,$invoice_no,$payment_date,$status;
 
-//     if ($order) {
-//         echo "success transaction";
-//     }else {
-//         echo "fail transaction";
-//     }
+    if ($order) {
+        echo "success transaction";
+    }else {
+        echo "fail transaction";
+    }
     //save payment details
     $order_id= order_id_ctr($invoice_no);
     $order_id=$order_id['order_id'];
     // $amt= $_GET['amt'];
     $currency= 'GHS';
-//     $payment= payment_ctr($amt,$customer_id,$order_id,$currency,$payment_date);
-      echo $amt,$customer_id,$order_id,$currency,$payment_date;
-//     if ($payment) {
-//       header("location:../view/all_prodcut.php");
-//     }else {
-//         echo "failed payment";
-//     }
+    $payment= payment_ctr($amt,$customer_id,$order_id,$currency,$payment_date);
+//       echo $amt,$customer_id,$order_id,$currency,$payment_date;
+    if ($payment) {
+      header("location:../view/all_prodcut.php");
+    }else {
+        echo "failed payment";
+    }
 
 }
   ?>
