@@ -2,6 +2,8 @@
 include('../controllers/customer_controller.php');
 $customer_id = $_GET['customer_id'];
 $customer = viewonecustomer_ctr($customer_id);
+
+// echo $customer_id;
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +33,8 @@ $customer = viewonecustomer_ctr($customer_id);
 
 
                     <div class="form-field">
+                    <input type="hidden" name="customer_id" placeholder="Name" value="<?php echo $customer['customer_id']?> "  />
+
                     <input type="text" name="customer_name" placeholder="Name" value="<?php echo $customer['customer_name']?> " required />
             </div>
 
@@ -55,6 +59,7 @@ $customer = viewonecustomer_ctr($customer_id);
             </div>
 
             </br>
+
             <button name="Updatec" class="btn btn-primary"> Update customer</button>
         </div>
         </form>

@@ -1,5 +1,5 @@
 <?php
-require("../controllers/customer_controller.php");
+include("../controllers/customer_controller.php");
 
 
 // session_start();
@@ -22,7 +22,7 @@ if(isset($_POST['Updatec']))
     if ($results) {
       header('location: ../admin/admin_users.php');
   } else {
-      echo 'Registration Failed. Try again';
+      echo 'customer Update Failed. Try again';
   }
 
   }
