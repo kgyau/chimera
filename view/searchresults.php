@@ -41,7 +41,6 @@ include("../controllers/product_controller.php");
                 <th class="col-md-5 col-xs-5">Title</th>
                 <th class="col-md-4 col-xs-4">Price</th>
                 <th class="col-md-3 col-xs-3">Description</th>
-                <th class="col-md-3 col-xs-3">Description</th>
                 <th class="col-md-3 col-xs-3">View product</th>
               
               
