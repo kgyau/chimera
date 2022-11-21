@@ -53,15 +53,10 @@ $cat = selectonecat_ctr($prod['product_cat']);
                 <div class="col-md-5 pl-6">
                     <div class="product-detail">
                         <h1>Title: <?php echo $prod['product_title']; ?></h1>
-                        <p>Category: <?php echo $prod['product_desc']; ?></p>
-                        <span class="price colored">Price: <?php echo $prod['product_price']; ?></span>
+                        <p>Description: <?php echo $prod['product_desc']; ?></p>
+                        <span class="price colored">Price: GHS <?php echo $prod['product_price']; ?></span>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.
-                        </p>
+                     
                         <?php
                             echo" 
 						    <a href='../actions/add_to_cart.php?product_id={$prod['product_id']}' class='btn btn-lg btn-success mr-2' name='addToCartButton'> Add to Cart</a>"
