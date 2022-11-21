@@ -56,7 +56,6 @@ $cat = selectonecat_ctr($prod['product_cat']);
                         <p>Description: <?php echo $prod['product_desc']; ?></p>
                         <p>Author: <?php echo $prod['product_keywords']; ?></p>
                         <span class="price colored">Price: GHS <?php echo $prod['product_price']; ?></span>
-
                      <br>
                         <?php
                             echo" 
