@@ -57,7 +57,7 @@ require("../controllers/cart_controller.php");
     $payment= payment_ctr($amt,$customer_id,$order_id,$currency,$payment_date);
 //       echo $amt,$customer_id,$order_id,$currency,$payment_date;
     if ($payment) {
-      header("location:../view/success.php");
+      header("location:../index/success.php");
     }else {
         echo "failed payment";
     }
