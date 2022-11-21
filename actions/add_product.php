@@ -26,10 +26,10 @@ if(isset($_POST['submitprod'])){
 
 //    echo "<img src='$file'>";
     
-   echo $prodcat,$prodtitle,$prodprice,$prodbrand,$proddesc,$prodimage,$prodkeywords; 
+//    echo $prodcat,$prodtitle,$prodprice,$prodbrand,$proddesc,$prodimage,$prodkeywords; 
 
 
-//   $result = addproduct_ctr($prodcat,$prodbrand,$prodtitle,$prodprice,$proddesc,$file,$prodkeywords);
+  $result = addproduct_ctr($prodcat,$prodbrand,$prodtitle,$prodprice,$proddesc,$file,$prodkeywords);
 
 //     if ($result) {
 
