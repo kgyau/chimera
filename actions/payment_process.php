@@ -32,7 +32,7 @@ require("../controllers/cart_controller.php");
   curl_setopt($ch,CURLOPT_RETURNTRANSFER, true); 
   //execute post
   $result = curl_exec($ch);
-  echo $result;
+//   echo $result;
 
     
     if ($result) {
@@ -42,6 +42,7 @@ require("../controllers/cart_controller.php");
     $status='Success';
     $payment_date=date('Y-m-d');
     $order= order_ctr($customer_id,$invoice_no,$payment_date,$status);
+//      echo $customer_id,$invoice_no,$payment_date,$status;
 
     if ($order) {
         echo "success transaction";
@@ -54,8 +55,9 @@ require("../controllers/cart_controller.php");
     // $amt= $_GET['amt'];
     $currency= 'GHS';
     $payment= payment_ctr($amt,$customer_id,$order_id,$currency,$payment_date);
+//       echo $amt,$customer_id,$order_id,$currency,$payment_date;
     if ($payment) {
-      header("location:../view/all_prodcut.php");
+      header("location:../index/success.php");
     }else {
         echo "failed payment";
     }
