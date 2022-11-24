@@ -21,6 +21,8 @@ if(isset($_POST['Updatep'])){
   
 
    $result= editprod_ctr($prod_id,$productcat,$productbrand,$prod_title,$productprice,$prod_desc,$prod_key,$file);
+    
+   
 
    if($result){
     header("location:../admin/admin_product.php");

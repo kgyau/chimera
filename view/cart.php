@@ -146,7 +146,7 @@ $cartitems = viewcart_ctr($c_id);
                             }
 
                             ?>
-                         <a href='../view/shop.php' class='btn btn'>continue shopping</a>
+                         <a href='../view/shop.php' class='btn btn'>continue shopping</a> 
                          <a href='../view/payment.php' class='btn btn'>Proceed to payment</a>
 
 
